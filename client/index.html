@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Internship Project, 2021</title>
+        
+        <link rel="stylesheet" type="text/css" href="http://localhost:8080/css/styles.css"/>
+        <script type="text/javascript" src="http://localhost:8080/helper.js"></script>
+    </head>
+
+    <body>
+        <div class="editor">
+            <div class="content-wrapper">
+            
+                <div class="head">
+                    <h1>&lt;/&gt; Code Editor</h1>
+                </div>
+
+                <div class="body">
+                
+                    <div class="left">
+                        <div class="editor__header">
+                            <div class="title-output">Enter Code</div>
+                            <div class="editor__lang">
+                                Language: &nbsp;
+                                <select name="lang" id="lang">
+                                    <option value="C">C</option>
+                                    <option value="C++">C++</option>
+                                    <option value="Java">Java</option>
+                                    <option value="Python">Python</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="editor__code" id="code"></div>
+                        <div class="editor__code--input">
+                            <textarea placeholder="Enter input (if applicable)" name="code-input" id="input" cols="112" rows="10"></textarea>
+                        </div>
+                    </div>
+                
+                    <div class="right">
+                        
+                        <div class="title-output">Output</div>
+                        <pre class="editor__console" id="output"></pre>
+                        <div class="submit-area">
+                            <div class="editor__input--checkbox">
+                                <input type="checkbox" style="zoom:1.5;" id=checkbox value="check"/> Custom Input
+                            </div>
+                            <div class="button-area">
+                                <button class="editor__btn editor__reset" id="reset-btn" onclick="resetCode()">Reset</button>
+                                <button class="editor__btn editor__run" id="run-btn" onclick="runCode()">Run</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Required Ace Libraries -->
+        <script src="http://localhost:8080/src-min/ace.js"></script>
+        <script src="http://localhost:8080/src-min/mode-c_cpp.js"></script>
+        <script src="http://localhost:8080/src-min/mode-java.js"></script>
+        <script src="http://localhost:8080/src-min/mode-python.js"></script>
+        <script src="http://localhost:8080/src-min/ext-language_tools.js"></script>
+        
+        <!-- Custom Scripts -->
+        <script src="http://localhost:8080/editor.js"></script>
+        
+  </body>
+</html>

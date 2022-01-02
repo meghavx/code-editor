@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Nunito:wght@300&display=swap');
+
+:root {
+    --editor-bg: #0E1525;
+    --console-bg: #181A1B;
+    --border-color: rgba(117, 117, 117, 0.938);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.head {
+    display: flex;
+    height: 12vh;
+    background-color: var(--button-bg);
+    background: #E0EAFC;    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: var(--editor-bg);
+}
+.body {
+    display: flex;
+    flex-direction: row;
+    height: 86vh;
+}
+h1 {
+    padding: 0;
+    margin: 1.5% auto auto 1.5%;
+    font-family: 'Hind', sans-serif;
+    font-size: 2.25em;
+}
+.left {
+    flex: 2.75;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.right {
+    flex: 2.25;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    margin-left: 0;
+}
+.editor__header {
+    display: flex;
+    justify-content: space-between;
+}
+.title-input {
+    flex: 3;
+    text-align: center;
+    padding: .8em;
+    padding-left: 0.6em;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+.editor__lang {
+    flex: 1;
+    text-align: right;
+    padding: .8em;
+    margin-right: 1%;
+    padding-right: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+textarea {
+    font-size: 1.2em;
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    resize: none; 
+    background-color: var(--console-bg); 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+select {
+    height: 24px;
+    width: 140px;
+    font-size: .9em;
+    padding-left: 4px;
+}
+select:focus {
+    min-width: 140px;
+    width: auto;
+}
+.editor__code {
+    position: relative;
+    height: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+.editor__code--input {
+    height: 25%;
+}
+.title-output {
+    padding: .8em;
+    padding-left: 0.6em;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+.editor__console {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    color: gray;
+    font-size: 13pt;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--console-bg);
+}
+.submit-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: right;
+    height: 8%;
+}
+.editor__input--checkbox {
+    position: relative;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+.editor__btn {
+    width: 130px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--editor-bg);
+    background: #E0EAFC;    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    border: 3px solid var(--editor-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.editor__reset {
+    margin-right: 0;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 48px;
+    text-align: center;
+}
+.footer-left, .footer-right {
+    flex: 4;
+}
+.footer-mid {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+

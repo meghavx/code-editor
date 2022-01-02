@@ -1,0 +1,97 @@
+C 
+==
+
+#include<stdio.h>
+int main()
+{
+    printf("Hello World from C !");
+    return 0;
+}
+
+#include <stdio.h>
+int main() {
+    int n, rev = 0, remainder;
+    
+    // Enter an integer
+    scanf("%d", &n);
+    
+    while (n != 0) {
+        remainder = n % 10;
+        rev = rev * 10 + remainder;
+        n /= 10;
+    }
+    
+    printf("Reversed number = %d", rev);
+    return 0;
+}
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@
+
+C++
+===
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello World from C++!";   
+    return 0;
+}
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+    cin >> a >> b;
+    c = a + b;
+    cout << c;
+    return 0;
+}
+
+@@@@@@@@@@@@@@@@@@@@@@@@
+
+Java
+====
+public class Main {
+    public static void main(String[] args) {
+        int n = 10, firstTerm = 0, secondTerm = 1;
+        System.out.println("Fibonacci Series till " + n + " terms:");
+
+        for (int i = 1; i <= n; ++i) {
+            System.out.print(firstTerm + ", ");
+
+            // compute the next term
+            int nextTerm = firstTerm + secondTerm;
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
+    }
+}
+
+
+import java.util.*;
+public class Main {
+ 
+    public static void main(String[] args) {        
+        int a = 0;
+        Scanner x = new Scanner(System.in );
+        a = x.nextInt();
+        System.out.println("Square of " + a + " is " + a*a + ".");
+    }
+}
+
+@@@@@@@@@@@@@@@@@@@@@@@@
+
+Python
+======
+print("Hello World from Python !")
+
+a = int(input())
+b = int(input())
+c = a + b
+print(c)
+
+@@@@@@@@@@@@@@@@@@@@@@@@
+
