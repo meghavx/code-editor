@@ -5,30 +5,34 @@ function resetCode() {
 }
 
 function runCode() {
-  
+    
     let lang = document.getElementById('lang').value;
     let code = document.getElementById('code').innerText;
 
-    if (lang === 'C' || lang === 'C++')
+    if (lang === 'C' || lang === 'C++') {
         code = code.slice(code.indexOf('#include'));
+    }
     else if (lang === 'Java') {
-        if (code.includes('import'))
-          code = code.slice(code.indexOf('import'),code.lastIndexOf('}')+1);
+        if (code.includes('import')) {
+            code = code.slice(code.indexOf('import'),code.lastIndexOf('}') + 1);
+        }
         else {
-            if (code.includes('public'))
-                code = code.slice(code.indexOf('public'),code.lastIndexOf('}')+1);
-            else
-                code = code.slice(code.indexOf('class'),code.lastIndexOf('}')+1);
+            if (code.includes('public')) {
+                code = code.slice(code.indexOf('public'),code.lastIndexOf('}') + 1);
+            }
+            else {
+                code = code.slice(code.indexOf('class'),code.lastIndexOf('}') + 1);
+            }
         }
     }
 
     let input = document.getElementById('input').value;
-
     let inputCheck = 'false';
     let selected = document.querySelector("input[type='checkbox']:checked")
-    if (selected !== null)
+    
+    if (selected !== null) {
         inputCheck = 'true';
-
+    }
     let data = {
         code : code,
         input : input, 
@@ -44,14 +48,17 @@ function runCode() {
     .then(response => response.json()) 
     .then(json => {
         let outputValue;
-        if (json.output != null)
+        if (json.output != null) {
             outputValue = json.output;
-        else if (json.error != null)
+        }
+        else if (json.error != null) {
             outputValue = json.error;
-        else
+        }
+        else {
             outputValue = json;
-
+        }
         let output = document.getElementById('output');
+        
         output.innerText = outputValue;
         console.log(outputValue);
     })
