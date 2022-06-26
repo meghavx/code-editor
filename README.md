@@ -1,3 +1,6 @@
+# CODE-IT
+An online code-editor web app that allows the user to write, edit, and execute code in C/C++, Java, and Python programming languages. 
+
 ## How to run:
 
 * Install Node.js and the compilers for C, C++, Java and Python.
