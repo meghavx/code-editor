@@ -1,20 +1,18 @@
 ## How to run:
 
--Install Node.js <br>
--Install compilers for Java, C, C++, and Python.
+* Install Node.js and the compilers for C, C++,, Java and Python.
+* Open the command prompt, and run `node server\index.js` command.
+* Open the browser and launch: http://localhost:8080/
 
-<br> Open command prompt, and run the following command:
-* `node server\index.js`
+#### View Demo:
+https://youtu.be/pfWEkJaD16A
 
-<br> Open the browser and launch:
-http://localhost:8080/
-
-### Snapshots:
+#### Snapshots:
 
 <img src="https://github.com/orbitze/misc-img/blob/main/Screenshot%20(345).png?raw=true"
-     style="text-align: center; width: 100%;"/>
+     style="text-align: center; width: 80%;"/>
 </br>
 
-<img src="https://github.com/orbitze/misc-img/blob/main/Screenshot%20(346).png?raw=true"
-     style="text-align: center; width: 100%;"/>
-</br>
+<!-- <img src="https://github.com/orbitze/misc-img/blob/main/Screenshot%20(346).png?raw=true"
+     style="text-align: center; width: 80%;"/>
+</br> -->
