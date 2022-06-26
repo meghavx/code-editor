@@ -1,6 +1,6 @@
 ## How to run:
 
-* Install Node.js and the compilers for C, C++,, Java and Python.
+* Install Node.js and the compilers for C, C++, Java and Python.
 * Open the command prompt, and run `node server\index.js` command.
 * Open the browser and launch: http://localhost:8080/
 
