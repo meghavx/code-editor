@@ -1,5 +1,5 @@
 # CODE-IT
-An online code-editor web app that allows the user to write, edit, and execute code in C/C++, Java, and Python programming languages. 
+An online code-editor web app using which the user can write/edit and execute code in a programming language of their choice.
 
 ## How to run:
 
