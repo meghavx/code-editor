@@ -1,6 +1,6 @@
 # CODE-IT
 An online code-editor web app using which the user can write/edit and execute code in a programming language of their choice.
-</br> (Currently four programming languages are supported: C, C++, Java, and Python.)
+Currently four programming languages are supported: C, C++, Java, and Python.
 
 ## How to run:
 
