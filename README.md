@@ -8,9 +8,6 @@ Currently four programming languages are supported: C, C++, Java, and Python.
 * Open the command prompt, and run `node server\index.js` command.
 * Open the browser and launch: http://localhost:8080/
 
-#### View Demo:
-https://youtu.be/pfWEkJaD16A
-
 #### Snapshots:
 
 <img src="https://github.com/orbitze/misc-img/blob/main/Screenshot%20(345).png?raw=true"
